@@ -1,0 +1,15 @@
+*.apk
+*.aab
+*.log
+.DS_Store
+.gradle/
+.google/
+.idea/
+!.idea/codeStyleSettings.xml
+!.idea/inspectionProfiles/
+!.idea/codeStyles/
+!.idea/saveactions_settings.xml  
+build/
+cmake/
+local.properties
+src/nativeMain/cpp/libnative_api.h

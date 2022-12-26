@@ -1,0 +1,3 @@
+headers = CanvasViewGlue.h CDrawContextGlue.h IBStreamerGlue.h UIControllerGlue.h AudioProcessorGlue.h
+headerFilter = CanvasViewGlue.h CDrawContextGlue.h IBStreamerGlue.h UIControllerGlue.h AudioProcessorGlue.h
+compilerOpts = -I./src/nativeMain/cpp/

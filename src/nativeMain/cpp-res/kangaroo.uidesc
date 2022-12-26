@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vstgui-ui-description version="1">
+    <template
+      name="Editor"
+      class="CanvasView"
+      size="1013, 536"
+      maxSize="1013, 536"
+      minSize="1013, 536"
+      mouse-enabled="true"
+      opacity="1"
+      origin="0, 0"
+      transparent="false"
+      wants-focus="true"
+    />
+</vstgui-ui-description>
