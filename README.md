@@ -6,7 +6,7 @@ Kangaroo is a VST3 instrument written in Kotlin/native.
 
 * License: GNU General Public License v3.0
 * Github: https://github.com/digorydoo/kangaroo
-* Home: www.digorydoo.ch
+* Home: https://www.digorydoo.ch/kangaroo
 
 ## Project status
 
