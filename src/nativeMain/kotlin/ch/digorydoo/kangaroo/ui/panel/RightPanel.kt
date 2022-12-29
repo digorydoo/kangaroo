@@ -31,7 +31,7 @@ class RightPanel(
         KnobAndLabel(canvas, 16, 356, "Crunch", dark = true, disabled = true),
         KnobAndLabel(canvas, 64, 356, "Punch", dark = true, disabled = true),
 
-        Label(canvas, 24, 474, text = "Jihad", size = Label.Size.TINY),
+        Label(canvas, 24, 474, text = "Quarter tones", size = Label.Size.TINY),
         Keyboard(
             canvas,
             left = 24,
