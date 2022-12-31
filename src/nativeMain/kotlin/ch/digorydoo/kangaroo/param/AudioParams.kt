@@ -4,49 +4,6 @@ import ch.digorydoo.kangaroo.param.Param.RangeParam
 import ch.digorydoo.kangaroo.param.ParamTag.*
 
 class AudioParams {
-    class Osc1Params {
-        var shape = 0.0
-        var volume = 0.0
-        var pitch = 0.0
-        var detune = 0.0
-    }
-
-    class Osc2Params {
-        var shape = 0.0
-        var volume = 0.0
-        var pitch = 0.0
-        var detune = 0.0
-    }
-
-    class Osc3Params {
-        var shape = 0.0
-        var volume = 0.0
-        var detune = 0.0
-        var foldOsc1 = 0.0
-    }
-
-    class NoiseParams {
-        var shape = 0.0
-        var volume = 0.0
-    }
-
-    class FilterParams {
-        var lpfFreq = 0.0
-        var hpfFreq = 0.0
-        var bpfFreq = 0.0
-        var bpfAmount = 0.0
-        var vowelFormant = 0.0
-        var vowelAmount = 0.0
-    }
-
-    class LFO1Params {
-        var shape = 0.0
-    }
-
-    class LFO2Params {
-        var shape = 0.0
-    }
-
     class EnvelopeParams {
         var attackMillis = 0.0
         var decayMillis = 0.0
@@ -55,13 +12,34 @@ class AudioParams {
     }
 
     class LayerParams {
-        val osc1 = Osc1Params()
-        val osc2 = Osc2Params()
-        val osc3 = Osc3Params()
-        val noise = NoiseParams()
-        val filter = FilterParams()
-        val lfo1 = LFO1Params()
-        val lfo2 = LFO2Params()
+        var osc1Shape = 0.0
+        var osc1Volume = 0.0
+        var osc1Pitch = 0.0
+        var osc1Detune = 0.0
+
+        var osc2Shape = 0.0
+        var osc2Volume = 0.0
+        var osc2Pitch = 0.0
+        var osc2Detune = 0.0
+
+        var osc3Shape = 0.0
+        var osc3Volume = 0.0
+        var osc3Detune = 0.0
+        var osc3FoldOsc1 = 0.0
+
+        var noiseShape = 0.0
+        var noiseVolume = 0.0
+
+        var lpfFreq = 0.0
+        var hpfFreq = 0.0
+        var bpfFreq = 0.0
+        var bpfAmount = 0.0
+        var vowelFormant = 0.0
+        var vowelAmount = 0.0
+
+        var lfo1Shape = 0.0
+        var lfo2Shape = 0.0
+
         val env1 = EnvelopeParams()
     }
 
@@ -82,28 +60,28 @@ class AudioParams {
             ALL_NOTES_OFF -> Unit
             OUTPUT_LEFT_PEAK -> Unit
             OUTPUT_RIGHT_PEAK -> Unit
-            OSC1_SHAPE -> layerA.osc1.shape = normValue
-            OSC1_VOLUME -> layerA.osc1.volume = normValue
-            OSC1_PITCH -> layerA.osc1.pitch = rangeValue
-            OSC1_DETUNE -> layerA.osc1.detune = balancedValue
-            OSC2_SHAPE -> layerA.osc2.shape = normValue
-            OSC2_VOLUME -> layerA.osc2.volume = normValue
-            OSC2_PITCH -> layerA.osc2.pitch = rangeValue
-            OSC2_DETUNE -> layerA.osc2.detune = balancedValue
-            OSC3_SHAPE -> layerA.osc3.shape = normValue
-            OSC3_VOLUME -> layerA.osc3.volume = normValue
-            OSC3_DETUNE -> layerA.osc3.detune = balancedValue
-            OSC3_FOLD_OSC1 -> layerA.osc3.foldOsc1 = normValue
-            NOISE_SHAPE -> layerA.noise.shape = normValue
-            NOISE_VOLUME -> layerA.noise.volume = normValue
-            LOW_PASS_FREQ -> layerA.filter.lpfFreq = rangeValue
-            HIGH_PASS_FREQ -> layerA.filter.hpfFreq = rangeValue
-            BAND_PASS_FREQ -> layerA.filter.bpfFreq = rangeValue
-            BAND_PASS_AMOUNT -> layerA.filter.bpfAmount = normValue
-            VOWEL_FORMANT -> layerA.filter.vowelFormant = normValue
-            VOWEL_AMOUNT -> layerA.filter.vowelAmount = normValue
-            LFO1_SHAPE -> layerA.lfo1.shape = normValue
-            LFO2_SHAPE -> layerA.lfo2.shape = normValue
+            OSC1_SHAPE -> layerA.osc1Shape = normValue
+            OSC1_VOLUME -> layerA.osc1Volume = normValue
+            OSC1_PITCH -> layerA.osc1Pitch = rangeValue
+            OSC1_DETUNE -> layerA.osc1Detune = balancedValue
+            OSC2_SHAPE -> layerA.osc2Shape = normValue
+            OSC2_VOLUME -> layerA.osc2Volume = normValue
+            OSC2_PITCH -> layerA.osc2Pitch = rangeValue
+            OSC2_DETUNE -> layerA.osc2Detune = balancedValue
+            OSC3_SHAPE -> layerA.osc3Shape = normValue
+            OSC3_VOLUME -> layerA.osc3Volume = normValue
+            OSC3_DETUNE -> layerA.osc3Detune = balancedValue
+            OSC3_FOLD_OSC1 -> layerA.osc3FoldOsc1 = normValue
+            NOISE_SHAPE -> layerA.noiseShape = normValue
+            NOISE_VOLUME -> layerA.noiseVolume = normValue
+            LOW_PASS_FREQ -> layerA.lpfFreq = rangeValue
+            HIGH_PASS_FREQ -> layerA.hpfFreq = rangeValue
+            BAND_PASS_FREQ -> layerA.bpfFreq = rangeValue
+            BAND_PASS_AMOUNT -> layerA.bpfAmount = normValue
+            VOWEL_FORMANT -> layerA.vowelFormant = normValue
+            VOWEL_AMOUNT -> layerA.vowelAmount = normValue
+            LFO1_SHAPE -> layerA.lfo1Shape = normValue
+            LFO2_SHAPE -> layerA.lfo2Shape = normValue
             ENV1_ATTACK -> layerA.env1.attackMillis = rangeValue
             ENV1_DECAY -> layerA.env1.decayMillis = rangeValue
             ENV1_SUSTAIN -> layerA.env1.sustainLevel = normValue
