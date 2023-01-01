@@ -18,6 +18,10 @@ i7 3.2 GHz.
 
 It may or may not be possible to overcome these issues.
 
+Kangaroo uses Kotlin/native to achieve cpp/Kotlin interopability. However, Kotlin/native may not be as fast as
+Kotlin in JVM, see https://discuss.kotlinlang.org/t/status-of-kotlin-native/21615 . Therefore, it may be better
+to switch to JVM and use Java/cpp interop such as https://github.com/bytedeco/javacpp .
+
 ## Features
 
 The following features have been implemented:
